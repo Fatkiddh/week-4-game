@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <!--links html to reset page  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!--links html to style page  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--link to bootstrap stylesheet  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--link to jquery library  -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <title>Crystal Game</title>
+  </head>
+
+  <body>
+
+  <div class="container">
+
+      <!--header with title of CrystalsCollector  -->
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-3 bg-warning text-white" id="gameTitle" >
+          <h2> CrystalsCollector </h2>
+        </div>
+      </div>
+
+    <!--instructions to play the game  -->
+      <div class="row">
+        <div class="col-md-7 bg-light text-success" id="instructions" >
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are frour crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+          <p>You win the game by matching your total score to random bumber, you lose the game if your total score goeas above the ranom number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+      </div>
+
+    <!--row with 2 colums side by side; 1st box that shows the random number you want to get to by clicking crystals, second box keeps track of wins and loses.  -->
+      <div class="row">
+
+        <div class="col-md-4 bg-success text-dark" id="randomNumberGenerated">
+          <p id="targetScore"></p>
+        </div>
+
+        <div class="col-md-2 bg-info text-dark" id="winsLoses">
+
+          <div class="wins">
+            <h3>Wins:</h3>
+          </div>
+
+            <div class="winCount">
+              <h3 id="winCount">0</h3>
+            </div>
+
+          <div class="loss">
+            <h3>loss:</h3>
+          </div>
+
+          <div class="lossCount">
+            <h3 id="lossCount">0</h3>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    <!--place 4 images of the crystals, that will each randomly be given a number 1-12.  -->
+      <div class="row">
+
+          <div class="col bg-info" id="blue">
+            <img src="assets/images/2-Star_crystal.png" alt="" id="blue">
+          </div>
+
+          <div class="col bg-info" id="green">
+            <img src="assets/images/2-Star_crystal.png" alt="" id="green">
+          </div>
+
+          <div class="col bg-info" id="red">
+            <img src="assets/images/2-Star_crystal.png" alt="" id="red">
+          </div>
+
+          <div class="col bg-info" id="yellow">
+            <img src="assets/images/2-Star_crystal.png" alt="" id="yellow">
+          </div>
+
+
+      </div>
+
+      <!--container w/ your total score is: -->
+      <div class="row">
+        <div class="col-4 bg-info text-white" id="scoreIs">
+          <p>Your total Score is:</p>
+        </div>
+      </div>
+
+      <!--box that itterates you clicks of the crystals.  -->
+      <div class="row">
+        <div class="col-4 bg-info text-white" id="iteratingScoreBox">
+          <p id="yourScore"></p>
+        </div>
+      </div>
+
+  </div>
+
+<script src="assets/javascript/game.js"></script>
+  </body>
+</html>

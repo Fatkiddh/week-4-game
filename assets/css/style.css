@@ -1,0 +1,59 @@
+.container{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#gameTitle{
+  margin: 1%;1%;1%;1%;
+}
+
+#instructions{
+  margin: 1%;1%;1%;1%;
+}
+
+#randomNumberGenerated{
+  margin: 1%;1%;1%;1%;
+}
+
+#winsLoses{
+  margin: 1%;1%;1%;1%;
+}
+
+#crystalsToClick{
+  margin: 1%;1%;1%;1%;
+}
+
+#scoreIs{
+  margin: 1%;1%;1%;1%;
+}
+
+#iteratingScoreBox{
+  margin: 1%;1%;1%;1%;
+}
+
+#blue{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+#green{
+  width: 50px;
+  height: 50px;
+  background-color: white
+
+}
+
+#red{
+  width: 50px;
+  height: 50px;
+  background-color: white
+}
+
+#yellow{
+  width: 50px;
+  height: 50px;
+  background-color: white
+
+}
